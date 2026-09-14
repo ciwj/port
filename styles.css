@@ -66,6 +66,21 @@ main {
     height: 100%;
 }
 
+#main_entry {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%;
+    padding: 25px 10%;
+}
+
+#main_entry * {
+    grid-column: 2 / span 2;
+}
+
+#main_entry img {
+    grid-column: 1;
+}
 
 html {
     width: 100%;
