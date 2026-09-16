@@ -1,7 +1,33 @@
+/*************************************/
+/*           MISCELLANEOUS           */
+/*************************************/
+
+
 @font-face {
     font-family: bouba;
     src: url("assets/bouba.woff");
 }
+
+html {
+    width: 100%;
+    height: 100%;
+    font-family: bouba;
+}
+
+main {
+    padding: 15px;
+    align-self: stretch;
+    height: 100%;
+}
+
+button {
+    font-family: bouba;
+}
+
+/*************************************/
+/*              HEADER               */
+/*************************************/
+
 
 header {
     background-color: #201d24;
@@ -13,17 +39,6 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-}
-
-footer {
-    background-color: #201d24;
-    border-color: darkcyan;
-    border-top-style: solid;
-    border-top-width: 15px;
-    color: deeppink;
-    width: 100%;
-    min-height: 50px;
-    padding: 15px;
 }
 
 header .logo_text_container {
@@ -62,19 +77,66 @@ nav {
     align-content: stretch;
 }
 
+
+/*************************************/
+/*              FOOTER               */
+/*************************************/
+
+
+footer {
+    background-color: #201d24;
+    border-color: darkcyan;
+    border-top-style: solid;
+    border-top-width: 15px;
+    color: deeppink;
+    width: 100%;
+    min-height: 50px;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 25px;
+}
+
+.footer_container img {
+    max-height: 35px;
+    align-self: center;
+    margin: 5px 0 5px 5px;
+}
+
+.footer_container {
+    display: flex;
+    flex-direction: row;
+    font-size: larger;
+    border-width: 4px;
+    border-color: deeppink;
+    border-style: outset;
+    padding: 2px 5px
+}
+
+footer a {
+    text-decoration: none;
+    color: deeppink;
+}
+
+.footer_container p {
+    margin: 10px 7px 0 7px;
+}
+
+
 body {
     background-color: #6032a6;
     color: honeydew;
     display: flex;
     flex-direction: column;
     margin: 0;
-}
-
-main {
-    padding: 15px;
-    align-self: stretch;
     height: 100%;
 }
+
+
+/*************************************/
+/*              WELCOME              */
+/*************************************/
+
 
 #main_entry {
     display: flex;
@@ -92,31 +154,4 @@ main {
     border-color: deeppink;
     border-width: 10px;
     border-style: outset;
-}
-
-html {
-    width: 100%;
-    font-family: bouba;
-}
-
-button {
-    font-family: bouba;
-}
-
-.footer_container img {
-    max-height: 50px;
-}
-
-.footer_container {
-    display: flex;
-    flex-direction: row;
-    column-gap: 15px;
-    font-size: larger;
-    border-width: 5px;
-    border-color: deeppink;
-    border-style: outset;
-}
-
-.footer_container p {
-
 }
