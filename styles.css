@@ -4,7 +4,7 @@
 }
 
 header {
-    background-color: black;
+    background-color: #201d24;
     border-color: darkcyan;
     border-bottom-style: solid;
     border-bottom-width: 15px;
@@ -16,13 +16,14 @@ header {
 }
 
 footer {
-    background-color: black;
+    background-color: #201d24;
     border-color: darkcyan;
     border-top-style: solid;
     border-top-width: 15px;
     color: deeppink;
     width: 100%;
     min-height: 50px;
+    padding: 15px;
 }
 
 header .logo_text_container {
@@ -39,14 +40,14 @@ header .logo_text_container {
 
 .logo_text_container img {
     margin: 5px;
-    border-color: darkorchid;
+    border-color: deeppink;
     border-width: 4px;
     border-style: outset;
 }
 
 nav button {
     color: lavender;
-    background-color: darkorchid;
+    background-color: #6032a6;
     border-color: deeppink;
     border-width: 3px;
     border-style: outset;
@@ -62,7 +63,7 @@ nav {
 }
 
 body {
-    background-color: darkviolet;
+    background-color: #6032a6;
     color: honeydew;
     display: flex;
     flex-direction: column;
@@ -87,9 +88,35 @@ main {
     padding-left: 40px;
 }
 
-
+#main_entry img {
+    border-color: deeppink;
+    border-width: 10px;
+    border-style: outset;
+}
 
 html {
     width: 100%;
     font-family: bouba;
+}
+
+button {
+    font-family: bouba;
+}
+
+.footer_container img {
+    max-height: 50px;
+}
+
+.footer_container {
+    display: flex;
+    flex-direction: row;
+    column-gap: 15px;
+    font-size: larger;
+    border-width: 5px;
+    border-color: deeppink;
+    border-style: outset;
+}
+
+.footer_container p {
+
 }
