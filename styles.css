@@ -6,7 +6,7 @@
 @font-face {
     font-family: bouba;
     src: url("assets/bouba.woff");
-}
+} /*TODO add backup web safe font*/
 
 html {
     width: 100%;
@@ -119,7 +119,7 @@ footer a {
 }
 
 .footer_container p {
-    margin: 10px 7px 0 7px;
+    margin: 7px 7px 0 7px;
 }
 
 
