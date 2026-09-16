@@ -24,6 +24,20 @@ button {
     font-family: bouba;
 }
 
+a {
+    text-decoration: none;
+    color: lavender;
+}
+
+body {
+    background-color: #6032a6;
+    color: honeydew;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    height: 100%;
+}
+
 /*************************************/
 /*              HEADER               */
 /*************************************/
@@ -123,16 +137,6 @@ footer a {
 }
 
 
-body {
-    background-color: #6032a6;
-    color: honeydew;
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    height: 100%;
-}
-
-
 /*************************************/
 /*              WELCOME              */
 /*************************************/
@@ -167,7 +171,7 @@ body {
 }
 
 .works_item a {
-    max-width: 40%;
+    max-width: 25%;
     min-width: 75px;
 }
 
@@ -176,5 +180,27 @@ body {
 }
 
 .works_list {
-    /* TODO figure this out */
+    height: auto;
+}
+
+.works_txt a {
+    font-size: x-large;
+}
+
+.works_txt {
+    flex: 1 1 auto;
+    padding: 0 15px 0 50px;
+}
+
+.works_list h1 {
+    font-size: xxx-large;
+}
+
+.works_list h2 {
+    padding-top: 50px;
+    font-size: xx-large;
+}
+
+.works_txt iframe {
+    margin-top: auto; /* TODO get this to sit at the bottom */
 }
