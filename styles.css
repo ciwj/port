@@ -155,3 +155,26 @@ body {
     border-width: 10px;
     border-style: outset;
 }
+
+/*************************************/
+/*              WORKS?               */
+/*************************************/
+
+.works_item {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.works_item a {
+    max-width: 40%;
+    min-width: 75px;
+}
+
+.works_item a img {
+    width: 100%
+}
+
+.works_list {
+    /* TODO figure this out */
+}
