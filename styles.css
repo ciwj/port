@@ -8,6 +8,16 @@
     src: url("assets/bouba.woff");
 } /*TODO add backup web safe font*/
 
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
 html {
     width: 100%;
     height: 100%;
@@ -50,7 +60,34 @@ body {
 main aside {
     border: deeppink 10px outset;
     min-width: 200px;
-    margin: 3% 0;
+    margin: 2.5% 0;
+    background-color: #895adc;
+    max-width: 20%;
+    overflow: hidden;
+}
+
+.main_content {
+    width: 100%;
+    justify-content: space-between;
+}
+
+.marquee {
+    display: flex;
+    width: max-content;
+    animation: scroll-left 5s linear infinite;
+    margin: 20px 0;
+    border: deeppink 5px inset;
+    border-width: 5px 0;
+}
+
+.marquee:hover {
+    animation-play-state: paused;
+}
+
+.marquee_track {
+    display: flex;
+    gap: 12px;
+    padding: 0 6px;
 }
 
 
@@ -161,7 +198,7 @@ footer a {
 #main_entry {
     display: flex;
     flex-direction: row;
-    padding: 50px 10%;
+    padding: 3% 0 50px 0;
     column-gap: 5%;
 }
 
