@@ -74,10 +74,14 @@ main aside {
 .marquee {
     display: flex;
     width: max-content;
-    animation: scroll-left 5s linear infinite;
+    animation: scroll-left 10s linear infinite;
     margin: 20px 0;
-    border: deeppink 5px inset;
+    border: deeppink inset;
     border-width: 5px 0;
+}
+
+.stamp {
+    height: 40px;
 }
 
 .marquee:hover {
