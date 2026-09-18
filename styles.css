@@ -299,6 +299,9 @@ footer a {
     margin-top: auto; /* TODO get this to sit at the bottom */
 }
 
-#pixelart {
-
+#pixelart_canvas {
+    width: 70%;
+    aspect-ratio: 4 / 3;
+    border: deeppink 5px solid;
+    margin: 0 15%;
 }
