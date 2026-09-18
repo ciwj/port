@@ -25,7 +25,7 @@ html {
 }
 
 main {
-    padding: 10px 10%;
+    padding: 10px 5%;
     align-self: stretch;
     height: 100%;
     display: flex;
@@ -60,6 +60,10 @@ body {
     border-style:  solid;
 }
 
+main:has(#main_works) {
+    height: auto;
+    min-height: 100%;
+}
 
 
 /*************************************/
@@ -127,7 +131,7 @@ main aside {
 
 header {
     background-color: #201d24;
-    border-color: darkcyan;
+    border-color: #895adc;
     border-bottom-style: solid;
     border-bottom-width: 15px;
     color: lavender;
@@ -181,13 +185,13 @@ nav {
 
 footer {
     background-color: #201d24;
-    border-color: darkcyan;
+    border-color: #895adc;
     border-top-style: solid;
     border-top-width: 15px;
     color: deeppink;
     width: 100%;
     min-height: 50px;
-    padding: 15px;
+    padding: 15px 0;
     display: flex;
     flex-direction: row;
     column-gap: 25px;
@@ -206,7 +210,7 @@ footer {
     border-width: 4px;
     border-color: deeppink;
     border-style: outset;
-    padding: 2px 5px
+    padding: 5px 5px;
 }
 
 footer a {
@@ -267,7 +271,9 @@ footer a {
 }
 
 .works_list {
-    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .works_txt a {
