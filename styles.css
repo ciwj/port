@@ -80,10 +80,6 @@ main aside {
     border-width: 5px 0;
 }
 
-.stamp {
-    height: 40px;
-}
-
 .marquee:hover {
     animation-play-state: paused;
 }
