@@ -28,6 +28,7 @@ main {
     padding: 10px 5%;
     align-self: stretch;
     height: 100%;
+    overflow: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -296,4 +297,8 @@ footer a {
 
 .works_txt iframe {
     margin-top: auto; /* TODO get this to sit at the bottom */
+}
+
+#pixelart {
+
 }
