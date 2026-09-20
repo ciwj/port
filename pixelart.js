@@ -9,6 +9,7 @@ function init() {
 
     placeImage(ctx, "/assets/visual/dark_desk.png", 65, 100, 200, 200, 0);
     placeImage(ctx, "assets/visual/sword_no_bg.png", canvas.width / 2 - 100, canvas.height / 2 - 200, 200, 400, 180);
+    placeImage(ctx, "assets/visual/grief_alpha.png", canvas.width - 250, canvas.height - 270, 250, 250, 0)
 
     ctx.font = "40px bouba";
 }
