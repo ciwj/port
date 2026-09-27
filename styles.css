@@ -275,10 +275,15 @@ footer a {
     border-color: deeppink;
     border-width: 10px;
     border-style: outset;
+    margin: 0 auto auto auto;
 }
 
 #main_text {
     width: 100%;
+}
+
+ul {
+    line-height: 1.3;
 }
 
 
