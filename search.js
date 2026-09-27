@@ -10,9 +10,24 @@ function init() {
     search_input.addEventListener('input', search); // Make sure the function "search" runs when the search bar is updated.
 
     // Create all the items
-    tags = create_item(tags, link_cont, "https://petrapixel.neocities.org/indiewebdb/widgets", "PetraPixel's Indie Web Database", ["indie_web", "widgets", "resource"], "A collection of pre-made indie web widgets!");
-    //console.log(tags);
+    create_item(tags, link_cont, "https://petrapixel.neocities.org/indiewebdb/widgets", "PetraPixel's Indie Web Database", ["indie_web", "widgets", "resource"], "A collection of pre-made indie web widgets!");
+    create_item(tags, link_cont, "https://lospec.com/", "Lospec", ["pixelart", "resource", "visual_art"], "why doomscroll when you can browse colour palettes instead? daily prompts, pixelart resources and other tools");
+    update_taglist(tags);
 }
+
+
+function update_taglist(tags) {
+    let tag_cont = document.getElementById("tag_list");
+    let text_list = "";
+
+    for (let i = 0; i < tags.length; i++) {
+        text_list += tags[i] + " "
+    }
+
+
+    tag_cont.innerHTML = text_list;
+}
+
 
 // Automatically populate the items list given the parameters
 function create_item(all_tags, container, url, title, tags, text) {
@@ -21,6 +36,7 @@ function create_item(all_tags, container, url, title, tags, text) {
 
     // Iterate through each tag passed and add it to the item's classlist if it's new
     for (let i = 0; i < tags.length; i++) {
+        console.log(tags[i]);
         new_link.classList.add(tags[i]);
 
         if (!all_tags.includes(tags[i])) {
@@ -36,6 +52,7 @@ function create_item(all_tags, container, url, title, tags, text) {
 
     container.appendChild(new_link); // Add it to the list/display it
 
+
     return all_tags;
 }
 
@@ -49,7 +66,7 @@ function search() {
     // Iterate through each link, check if the query is contained inside. Show if yes, hide if no.
     for (i = 0; i < link_children.length; i++) {
         if (!link_children[i].classList.value.includes(query)) {
-            link_children[i].style.visibility = "hidden";
+            link_children[i].style.visibility = "collapse";
         } else {
             link_children[i].style.visibility = "visible";
         }
