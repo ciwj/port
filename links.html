@@ -1,5 +1,5 @@
 <!-- TODO add guestbook -->
-<!-- TODO links (personal) & links (i like) with tagging?? -->
+<!-- TODO more links (personal) & links (i like) with tagging?? -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,23 +11,10 @@
 <body>
 <header>
     <div class="logo_text_container">
-        <img src="assets/E_Side_32x32_bg.png" alt="The E-Sides icon - A casette in a device while on fire, done in pixel art.">
-        <h2>links!</h2>
+        <img src="assets/E_Side_32x32_bg.png" alt="[my_site] icon - A casette in a device while on fire, done in pixel art.">
+        <h2>[my_site]</h2>
     </div>
-    <nav>
-        <button class="link_nav"
-                onclick="window.location.href = 'index.html';">
-            main page
-        </button>
-        <button class="link_nav"
-                onclick="window.location.href = 'works.html';">
-            works
-        </button>
-        <button class="link_nav"
-                onclick="window.location.href = 'links.html';">
-            links!!
-        </button>
-    </nav>
+    <nav class="auto_nav"></nav>
 </header>
 <main>
     <section class="main_content search_parent">
@@ -252,13 +239,13 @@
         </div>
     </aside>
     <script src="search.js"></script>
+    <script src="sidebar.js"></script>
 </main>
 <footer>
     <a class="footer_container" href="https://silhouether.itch.io/" target="_blank">
         <img src="assets/itch-icon.svg" alt="An itch.io icon">
         <p>my itch.io!!</p>
     </a>
-    <!--TODO finish footer -->
 </footer>
 </body>
 </html>

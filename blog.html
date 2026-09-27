@@ -2,42 +2,45 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>[talking]</title>
+  <title>#myposts</title>
   <link rel="icon" type="image/x-icon" href="/assets/E_Side_32x32_bg.ico">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <header>
   <div class="logo_text_container">
-    <img src="assets/E_Side_32x32_bg.png" alt="The E-Sides icon - A casette in a device while on fire, done in pixel art.">
-    <h2>The E-Sides</h2>
+    <img src="assets/E_Side_32x32_bg.png" alt="[my_site] icon - A casette in a device while on fire, done in pixel art.">
+    <h2>[my_site]</h2>
   </div>
-  <nav>
-    <button class="link_nav"
-            onclick="window.location.href = 'index.html';">
-      main page
-    </button>
-    <button class="link_nav"
-            onclick="window.location.href = 'works.html';">
-      works
-    </button>
-    <button class="link_nav"
-            onclick="window.location.href = 'links.html';">
-      links!!
-    </button>
-  </nav>
+  <nav class="auto_nav"></nav>
 </header>
 <main>
-  <h1>[talking]</h1>
+  <h1>#myposts</h1>
+  <?xml version="1.0" encoding="UTF-8" ?>
+  <rss version="2.0">
+    <channel>
+      <title>#myposts</title>
+      <description>updates, writings, thoughts, and whatever I want to talk about? it's my time on the stage!</description>
+      <link>https://silhouether.nekoweb.org/blog</link>
+
+<!--      <item>-->
+<!--        <title>first rss test post?</title>-->
+<!--        <description>i really hope this doesn't cause spam :/ </description>-->
+<!--        <link></link>-->
+<!--      </item>-->
+
+
+    </channel>
+  </rss>
   <!-- TODO implement blog layout -->
-  <!-- TODO implement blog rss -->
+  <!-- TODO GOD THE RSS -->
 </main>
 <footer>
   <a class="footer_container" href="https://silhouether.itch.io/" target="_blank">
     <img src="assets/itch-icon.svg" alt="An itch.io icon">
     <p>my itch.io!!</p>
   </a>
-  <!--TODO finish footer -->
 </footer>
 </body>
+<script src="sidebar.js"></script>
 </html>
