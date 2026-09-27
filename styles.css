@@ -103,7 +103,8 @@ main:has(#main_works) {
 main aside {
     border: deeppink 10px outset;
     min-width: 200px;
-    margin: 2.5% 0;
+    height: fit-content;
+    padding: 2rem 0;
     background-color: #895adc;
     max-width: 20%;
     overflow: hidden;
@@ -198,7 +199,8 @@ nav button {
     border-style: outset;
     flex-grow: 4;
     margin: 10px 30px;
-
+    font-size: 12pt;
+    padding: 0 5px 2px 5px;
 }
 
 nav {

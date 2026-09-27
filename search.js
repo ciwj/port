@@ -12,6 +12,9 @@ function init() {
     // Create all the items
     create_item(tags, link_cont, "https://petrapixel.neocities.org/indiewebdb/widgets", "PetraPixel's Indie Web Database", ["indie_web", "widgets", "resource"], "A collection of pre-made indie web widgets!");
     create_item(tags, link_cont, "https://lospec.com/", "Lospec", ["pixelart", "resource", "visual_art"], "why doomscroll when you can browse colour palettes instead? daily prompts, pixelart resources and other tools");
+    create_item(tags, link_cont, "https://discourse.32bit.cafe/t/resources-list-for-the-personal-web/49", "The 32-bit Cafe's resource list", ["indie_web", "resource", "kitchen_sink", "widgets"], "Massive repository of code helper tools, web learning, widgets, and really just anything indie web")
+    create_item(tags, link_cont, "https://www.antiquepatternlibrary.org/", "The Antique Pattern Library", ["crafts", "resource", "visual_art"], "Collection of scanned public domain craft patterns!")
+
     update_taglist(tags);
 }
 
